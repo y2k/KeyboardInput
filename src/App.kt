@@ -1,3 +1,4 @@
+import org.w3c.dom.events.KeyboardEvent
 import kotlin.browser.document
 import kotlin.browser.window
 
@@ -8,7 +9,8 @@ fun main(args: Array<String>) {
     window.alert("ELEMENT = " + canvas)
 
     window.onkeydown = {
-        window.alert("KEYBOARD = " + JSON.stringify(it))
+        val e = it as KeyboardEvent
+        window.alert("KEYBOARD = " + JSON.stringify(e.keyCode))
     }
 
 }
