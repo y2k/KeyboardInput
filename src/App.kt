@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     window.alert("ELEMENT = " + canvas)
 
     window.onkeydown = {
-        window.alert("KEYBOARD = " + it)
+        window.alert("KEYBOARD = " + JSON.stringify(it))
     }
 
 }

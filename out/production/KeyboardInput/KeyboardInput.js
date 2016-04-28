@@ -2,7 +2,7 @@
   'use strict';
   var _ = Kotlin.defineRootPackage(null, /** @lends _ */ {
     main_kand9s$f: function (it) {
-      window.alert('KEYBOARD = ' + it);
+      window.alert('KEYBOARD = ' + JSON.stringify(it));
     },
     main_kand9s$: function (args) {
       var canvas = document.getElementsByTagName('CANVAS')[0];
