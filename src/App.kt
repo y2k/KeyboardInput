@@ -7,4 +7,8 @@ fun main(args: Array<String>) {
     val canvas = document.getElementsByTagName("CANVAS")[0]
     window.alert("ELEMENT = " + canvas)
 
+    window.onkeydown = {
+        window.alert("KEYBOARD = " + it)
+    }
+
 }
